@@ -8,10 +8,7 @@ def reverse_linked_list(head, linked_list):
     1 --> 2
     2 --> 1
 
-    start node  next node  new_next
     """
-    
-     
     current = head.get_src()
     next = head.get_next()
     head.set_next(None)
@@ -23,8 +20,6 @@ def reverse_linked_list(head, linked_list):
         current = next_node.get_src()
 
     return linked_list       
-
-
 
 
 linked_list_object = LinkedList()
